@@ -1,0 +1,38 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-lscs-s3-storage-browser-dev-066c8-authRole",
+      "UnauthRoleArn": "arn:aws:iam::011549152436:role/amplify-lscs-s3-storage-browser-dev-066c8-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::011549152436:role/amplify-lscs-s3-storage-browser-dev-066c8-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-lscs-s3-storage-browser-dev-066c8-deployment",
+      "UnauthRoleName": "amplify-lscs-s3-storage-browser-dev-066c8-unauthRole",
+      "StackName": "amplify-lscs-s3-storage-browser-dev-066c8",
+      "StackId": "arn:aws:cloudformation:us-east-1:011549152436:stack/amplify-lscs-s3-storage-browser-dev-066c8/1e45ab40-eb2e-11ef-a3ca-0e67ecf200f5",
+      "AmplifyAppId": "d2dxmfls3rml52"
+    }
+  },
+  "api": {
+    "lscs-s3-storage-browser": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-lscs-s3-storage-browser-dev-066c8-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apilscs-s3-storage-browser"
+      },
+      "lastPushTimeStamp": "2025-02-15T19:36:43.100Z"
+    }
+  }
+}

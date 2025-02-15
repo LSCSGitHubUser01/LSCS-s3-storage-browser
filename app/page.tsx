@@ -1,6 +1,6 @@
 "use client";
 
-import './amplifyConfig'; // ✅ Ensure Amplify is configured
+
 import { useState, useEffect } from "react";
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "@/amplify/data/resource";
@@ -11,6 +11,7 @@ import "@aws-amplify/ui-react/styles.css";
 import { Authenticator } from "@aws-amplify/ui-react";
 import StorageBrowser from "./StorageBrowser"; // Ensure this is imported correctly
 
+import './amplifyConfig'; // ✅ Ensure Amplify is configured
 
 Amplify.configure(outputs);
 
